@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintMath Privacy Policy</title>
+    <style>
+        :root {
+            --color-primary: #00BCD4; /* Emerald Teal */
+            --color-text: #333;
+            --color-background: #f8f8f8;
+            --color-border: #ddd;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            padding: 20px; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background-color: #fff;
+            color: var(--color-text);
+        }
+        h1 { 
+            color: var(--color-primary); 
+            font-size: 2.2rem; 
+            border-bottom: 3px solid var(--color-primary);
+            padding-bottom: 10px;
+        }
+        h2 { 
+            color: var(--color-primary); 
+            font-size: 1.6rem; 
+            margin-top: 2em; 
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        h3 { 
+            color: #555; 
+            font-size: 1.2rem; 
+            margin-top: 1.5em; 
+        }
+        p, li {
+            font-size: 1rem;
+        }
+        ul { padding-left: 25px; }
+        
+        /* Table Styling for Third-Party Services */
+        .data-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 1.5em 0; 
+            font-size: 0.95rem;
+        }
+        .data-table th, .data-table td { 
+            border: 1px solid var(--color-border); 
+            padding: 12px 15px; 
+            text-align: left; 
+        }
+        .data-table th {
+            background-color: var(--color-primary);
+            color: white;
+            font-weight: 600;
+        }
+        .note {
+            background-color: #e6f7ff;
+            border-left: 5px solid var(--color-primary);
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">&larr; Back to Main Page</a>
+
+    <!-- IMPORTANT: Fill in the bracketed fields [ ] below with your specific information. -->
+
+    <h1>SprintMath Privacy Policy</h1>
+
+    <p><strong>Effective Date:</strong> [Insert Date Policy is Published]</p>
+
+    <p>This Privacy Policy describes how the <strong>SprintMath Development Team</strong> ("we," "us," or "our") collects, uses, and discloses information from users of the SprintMath mobile and web application (the "Service").</p>
+
+    <p>We are deeply committed to the privacy of our users, particularly children. Our practices are designed to comply with applicable data protection laws, including the Children’s Online Privacy Protection Act (COPPA) in the United States, and relevant provisions of GDPR and PDPA regarding children’s data.</p>
+
+    <h2>1. Scope of Policy and Contact Information</h2>
+
+    <p><strong>The Service:</strong> SprintMath is a gamified, progressive math learning platform designed for children aged 8-14.</p>
+
+    <h3>Contact Us:</h3>
+    <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+    <ul>
+        <li><strong>Developer/Company Name:</strong> [Your Company Name or Legal Entity]</li>
+        <li><strong>Designated Email Address:</strong> [Your Required Support Email Address]</li>
+        <li><strong>Physical Address (Optional):</strong> [Your Physical Address]</li>
+    </ul>
+
+    <h2>2. Information We Collect</h2>
+
+    <p>We collect two main types of information: Personal Data (provided by the Parent) and Usage/Progress Data (generated during use).</p>
+
+    <h3>A. Personal Data Provided by Parent Accounts</h3>
+    <p>We require a Parent Account for all users. We collect the following Personal Data from the Parent:</p>
+    <ul>
+        <li><strong>Email Address:</strong> Used for account verification, password recovery, and communicating essential service updates.</li>
+        <li><strong>Password:</strong> Stored securely as a salted hash and never in plain text.</li>
+        <li><strong>Account Information (Optional):</strong> Parent's display name or other profile information.</li>
+    </ul>
+
+    <h3>B. Child Profile Data (Under Parental Control)</h3>
+    <p>The parent creates individual child profiles. The following data associated with the child profile is collected and stored:</p>
+    <ul>
+        <li><strong>Child Display Name (or Alias):</strong> Used for in-app display and leaderboards.</li>
+        <li><strong>Child User ID:</strong> A unique, non-identifiable internal identifier.</li>
+        <li><strong>Age Range/Grade Level:</strong> Used to tailor the progressive curriculum.</li>
+    </ul>
+
+    <h3>C. Usage and Progress Data (Collected Automatically)</h3>
+    <p>This data is collected to provide the core educational service and track performance:</p>
+    <ul>
+        <li><strong>Session Data:</strong> Start/end times, answers provided, time per problem, streak data, and scores (0-3 stars).</li>
+        <li><strong>Progress Tracking:</strong> Comprehensive historical data on topics completed, Level A/Level B mastery status.</li>
+        <li><strong>Leaderboard Data:</strong> Scores and times necessary to populate the real-time global and regional leaderboards.</li>
+        <li><strong>Device Information:</strong> Device type, operating system version, and unique installation identifiers.</li>
+        <li><strong>Network Information:</strong> IP address, collected by our self-hosted backend during session activity and real-time updates (Socket.IO).</li>
+        <li><strong>Diagnostic Data:</strong> Crash logs and performance monitoring data.</li>
+        <li><strong>User Interface Interactions:</strong> Pages visited (via GoRouter) and features used (e.g., activation of text-to-speech, theme selection).</li>
+    </ul>
+
+    <h2>3. How We Use the Information</h2>
+
+    <p>We use the collected data for the following purposes:</p>
+    <ul>
+        <li>**Service Delivery:** To manage Parent and Child accounts, authenticate users (using JWT tokens stored securely via Flutter Secure Storage), and deliver the specific math problems.</li>
+        <li>**Educational Function:** To track, record, and display the child’s progress and mastery status through the progressive learning path.</li>
+        <li>**Gamification and Engagement:** To calculate and display scores, stars, streaks, and populate the real-time global and regional leaderboards.</li>
+        <li>**Real-Time Features:** To enable instantaneous feedback and leaderboard updates using the Socket.IO real-time service.</li>
+        <li>**Security and Integrity:** To implement anti-cheat mechanisms (HMAC session signatures, server-authoritative timing) and enforce rate limits.</li>
+        <li>**Technical Support:** To monitor usage, detect and prevent technical issues (via diagnostic/crash logs), and ensure platform stability.</li>
+        <li>**Accessibility:** To facilitate the text-to-speech and multilingual features.</li>
+    </ul>
+
+    <h2>4. Children's Privacy and Parental Consent</h2>
+
+    <p class="note">SprintMath is explicitly intended for Children under the age of 13.</p>
+    <ul>
+        <li>**Parental Consent:** We require a Parent Account to be created before any Child Profile can be created or accessed. The Parent Account creation process acts as our method of verifiable parental consent for the collection and use of the child's non-personal usage and progress data, as described in this policy.</li>
+        <li>**Data Minimization:** We only collect the minimal personal information necessary to operate the service (Parent email, child display name, progress data). We do not collect precise geolocation or share Personal Data with third-party advertisers.</li>
+        <li>**Parental Rights:** Parents have the right to review, update, or delete the Personal Data associated with their Parent Account and linked Child Profiles at any time by contacting us at the email provided above. Upon request for deletion, we will take steps to remove the data from our MongoDB and Redis systems.</li>
+    </ul>
+
+    <h2>5. Data Storage and Third-Party Services</h2>
+
+    <p>Our Service utilizes a self-hosted technology stack for maximum control over your data. You must update this table if you add new services (e.g., Google Maps, AdMob, etc.).</p>
+
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Component / Third Party Service</th>
+                <th>Data Function</th>
+                <th>Data Collected</th>
+                <th>Link to Policy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Self-Hosted Backend</strong> (Node.js/Fastify/MongoDB/Redis)</td>
+                <td>Core business logic, user authentication, storage of all Personal Data, Child Data, Progress Data, and Leaderboards.</td>
+                <td>All data listed in Section 2.</td>
+                <td>N/A (Self-Managed)</td>
+            </tr>
+            <tr>
+                <td><strong>Flutter Secure Storage</strong></td>
+                <td>Securely stores JWT access and refresh tokens on the user's device.</td>
+                <td>Authentication Tokens (Encrypted)</td>
+                <td>N/A (Local Device Storage)</td>
+            </tr>
+            <tr>
+                <td><strong>Hosting Provider</strong> (Render.com)</td>
+                <td>Provides the infrastructure to run our self-hosted backend. Receives raw network requests (IP addresses).</td>
+                <td>IP Addresses, Network Logs</td>
+                <td>[Insert Link to Your Hosting Provider's Privacy Policy]</td>
+            </tr>
+            <tr>
+                <td><strong>[Add Analytics Provider]</strong> (If used, e.g., Crashlytics)</td>
+                <td>Diagnostic and crash reporting.</td>
+                <td>Device ID, Diagnostic Logs</td>
+                <td>[Insert Link to Third-Party Policy]</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>6. Security and Data Retention</h2>
+
+    <ul>
+        <li>**Security Measures:** We use industry-standard security measures, including HTTPS/TLS encryption for all data transmission, secure password hashing, and HMAC signatures for data integrity, to protect data against unauthorized access.</li>
+        <li>**Data Location:** All data is stored on servers managed by our Hosting Provider in **[Insert Location of Servers, e.g., US, EU]**.</li>
+        <li>**Retention:** We retain Personal Data and Child Profile Data for as long as your account remains active. If an account is deleted, we initiate a process to delete the data within a reasonable period, typically **[Insert Number]** days.</li>
+    </ul>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top of this document. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+</body>
+</html>
